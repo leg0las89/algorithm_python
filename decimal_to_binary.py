@@ -7,4 +7,4 @@ def binary(n):
         return n%2 + 10 * binary(int(n/2))
 
 
-print(binary(16))
+print(binary(13))
