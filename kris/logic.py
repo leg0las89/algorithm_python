@@ -15,7 +15,7 @@ def sravnenie(nachalo, konec):
     nachalo_vremya = datetime.strptime(nachalo['event_time'],date_format)
     konec_vremya = datetime.strptime(konec['event_time'],date_format)
     print(f"################\n{nachalo['event_time']}\n{konec['event_time']}")
-    print(f"Vzyalo vremeni {konec_vremya - nachalo_vremya}##################")
+    print(f"Vzyalo {int((konec_vremya - nachalo_vremya).total_seconds() / 60)} minuta ##################")
 
 for empty in output_list:
     if len(empty['uid']) == 0 and switch == 0:
